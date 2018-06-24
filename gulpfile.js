@@ -14,6 +14,9 @@ gulp.task("copy-html",function(){
 	gulp.src("index.html")
 	.pipe(gulp.dest("dist"))
 	.pipe(connect.reload());
+	
+	gulp.src("font/**")
+	.pipe(gulp.dest("dist/font"))
 });
 
 gulp.task("html",function(){
@@ -40,6 +43,8 @@ gulp.task("sass",function(){
 	.pipe(connect.reload())
 	
 });
+
+
 
 //js
 gulp.task("script",function(){

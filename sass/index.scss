@@ -1,3 +1,430 @@
-body{
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{ font:12px;font-family: 'iconfont';}
+input,a{outline:none;}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('../font/iconfont.svg#iconfont') format('svg');
+}
+
+
+//头部信息
+.hd_top_bar{
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 12px;
+}
+
+.claerfix{
+    display: block;
+}
+.hd_indxProvce{
+    position: relative;
+    z-index: 605;
+    float: left;
+    width: 123.75px;
+    height: 30px;
+}
+
+.hd_topbar_right{
+    float: right;
+    color: #666;
+}
+.hd_icontfont{
+    color: red;
+    font-style: normal;
+    font-weight: 900;
+}
+.hd_topbar_right{
+    float: right;
+    color: #666;
+    ul{
+        float: left;
+        width: 375px;
+        .li1{
+            float: left;
+            width:39px;
+            color: red;
+          text-indent:10px;
+        }
+        .li2{
+            float: left;
+            width:28px ;
+            a{
+                display: block;
+                margin: 0 2px;
+                color: red;
+            }
+        }
+        .li3{
+            float: left;
+            width: 44px;
+            a{
+                display: block;
+                margin: 0 10px;
+            }
+        }
+        .li4{
+            float: left;
+//          width: 85px;
+            a{
+                display: block;
+                margin: 0 12px;
+            }
+        }
+        .li5{
+            float: left;
+            .hd_menu{
+                 a{
+                     display: block;
+                    margin: 0 10px;
+                }
+            }
+            .hd_menu_list{
+                position: absolute;
+                top: 29px;
+                display: none;
+                width: 68px;
+                padding: 5px 5px 5px 10px;
+                border: 1px solid #dbdbdb;
+                border-top: 0 none;
+                background-color: #fff;
+                a{
+                    display: block;
+                    width: 100%;
+                }
+            }
+           
+        }
+        .li6{
+            float: left;
+            a{
+                display: block;
+                margin-left: 16px;
+                span{
+                    font-weight: 900;
+                }
+            }
+            .hd_ewm{
+                position: absolute;
+                top: 30px;
+                display: none;
+                padding: 15px 9px 9px;
+                border: 1px solid #e5e5e5;
+                background-color: #fff;
+                .sanjiao{
+                    width: 0;
+                    height: 0;
+                    border-top: 0px;
+                    border-left: 7px solid transparent;
+                    border-right: 7px solid transparent;
+                    border-bottom: 7px solid #E5E5E5;
+                    position: absolute;
+                    top: -7px;
+                    left: 46px;
+                }
+                p{
+                    text-align: center;
+                    line-height: 12px;
+                    margin-bottom: 7px;
+                }
+                a{
+                    display: block;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    ul li:hover a{
+        color: red;
+    }
+    ul li:nth-of-type(5):hover{
+        background: #fff;
+        border-left: 1px solid #dbdbdb;
+        border-right: 1px solid #dbdbdb;
+    }
+    ul li:nth-of-type(5):hover .hd_menu_list{
+        display: block;
+        
+    }
+    ul li:nth-of-type(5):hover .hd_menu_list a{
+        color: #000;
+    }
+    
+    ul li:nth-of-type(5) .hd_menu_list a:hover{
+        color: red;
+        
+    }
+    
+    ul li:nth-of-type(6):hover .hd_ewm {
+        display: block;
+    }
+}
+
+
+
+//头部下半部分
+.hd_header{
+    height: 150px;
+    background-repeat: no-repeat;
+}
+.hd_logo{
+    float: left;
+
+    
+     a{
+        width: 205px;
+        height: 150px;
+        display: block;
+        background: url(../img/logo.png) no-repeat center/cover;
+     }
+}
+.hd_header_right{
+    float: right;
+    width: 974px;
+    padding: 32px 14px 0 35px;
+}
+
+//搜索 
+.search{
+  width: 754px;
+  height: 40px;
+  float: left;
+  .search1{
+    width:660px;
+    height: 36px;
+    border: 2px solid red;
+    float: left;
+    outline: none;
+    font-size: 18px;
+    padding: 0 20px;
+    
+}
+  .btn1{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    width: 50px;
     background: red;
+    color: white;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+  }
+}   
+   
+    
+
+
+.shop{
+    float: right;
+     width: 130px;
+     height: 39px;
+     border: 1px solid #d7d7d7;
+     a{
+        display: block;
+        height: 20px;
+        padding: 9px 0 9px;
+        background: #FFF;
+        border: 0;
+        text-align: center;
+        line-height: 20px;
+        color: #666666;
+        font-size: 16px;  
+        span{
+           margin-right: 20px; 
+        }  
+    }
+}
+.hd_list{
+    width: 754px;
+    height: 36px;
+    a{
+        display: block;
+        float: left;
+        margin-right: 15px;
+        line-height: 36px;
+        color: #aaa;
+        font-size: 14px;
+    }
+}
+.hd_nav{
+   float: left;
+    height: 40px;
+    li{
+        float: left;
+            margin-right: 30px;
+        
+        a{
+            display: block;
+            color: #333;
+            font-size: 16px;
+
+        }
+    }
+}
+
+//banner   商品详情
+#banner{
+    height: 400px;
+    background: coral;
+}
+.lists{
+    position: relative;
+    width: 205px;
+    box-sizing: border-box;
+    padding:15px 0 15px 50px ;
+    background:#434343 ;
+}   
+.list {
+    width: 100%;
+    line-height: 32px;
+    color: white;
+    font-size: 12px;
+    padding-left: 12px;
+}
+.list .menu:hover {
+    color: #c81623;
+}
+
+.list .fgx {
+    margin: 0 4px;
+}
+
+.list:hover {
+    background: #999395;
+}
+
+.list:hover .box {
+    display: block;
+}
+
+.list .box {
+    display: none;
+    width: 1000px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: -1000px;
+    background: #fff;
+    padding: 20px 0 10px 20px;
+}
+
+.box p:nth-child(n+2) {
+    padding: 6px 0;
+}
+
+.box p:nth-child(n+2) span {
+    display: inline-block;
+    margin: 4px 0;
+}
+
+.box .tips {
+    display: inline-block;
+    background: #999395;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 10px;
+    padding: 0 10px;
+}
+
+.box span:hover {
+    color: red
+}
+
+.box .tips:hover {
+    background: #5c5251;
+    color: #fff;
+}
+
+.box a {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.box .title {
+    vertical-align: top;
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+    font-size: 12px;
+    line-height: 16px;
+    color: #666;
+    font-weight: bold;
+}
+
+.title a {
+    text-align: right;
+}
+
+.tags {
+    vertical-align: top;
+    display: inline-block;
+    color: #666;
+    font-size: 12px;
+    width: 700px;
+    line-height: 16px;
+    margin-left: 15px;
+}
+
+.tag1 {
+    padding: 0 10px;
+    border-left: 1px solid #e0e0e0;
+    font-weight: 700;
+    color: #c81623;
+    height: 14px;
+    line-height: 14px;
+    border: 1px dotted #db7078;
+}
+
+.tag {
+    padding: 0 10px;
+    border-left: 1px solid #e0e0e0;
+}
+
+.imgBox {
+    box-sizing: border-box;
+    width: 198px;
+    height: 424px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    padding: 0 14px 0 15px;
+}
+
+.sImg {
+    display: inline-block;
+    float: left;
+    width: 83px;
+    height: 35px;
+    margin-right: 1px;
+    margin-top: 1px;
+}
+
+.bImg {
+    width: 168px;
+    height: 134px;
+    margin-top: 1px;
+    display: block;
+    float: left;
+}
+
+.imgBox img:nth-of-type(9) {
+    margin-top: 10px;
 }

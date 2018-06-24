@@ -1,0 +1,214 @@
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{ font:12px;font-family: 'iconfont';}
+input,a{outline:none;}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('../font/iconfont.svg#iconfont') format('svg');
+}
+
+
+.wrap{
+    margin: 0 auto;
+    width: 1228px;
+}
+
+
+//footer
+.ft_wrap{
+    background: #fff;
+    .ft_service{
+        padding: 30px 0;
+        border-bottom: 1px solid #ebebeb;
+            overflow: hidden;
+        
+        a{
+            display: block;
+            float: left;
+
+            width: 205px;
+            margin: 0 51px;
+            img{
+                float: left;
+                display: block;
+                width: 66px;
+                height: 66px;
+                margin-right: 15px
+            }    
+            b{
+                float: left;
+                margin-top: 10px;
+                font-family: "微软雅黑";
+                font-size: 16px;
+                color: #333;
+                font-weight: bold;
+            }
+            
+            span{
+                font-family: "微软雅黑";
+                float: left;
+                display: block;
+                font-size: 14px;
+                color: #999999;
+                line-height: 26px;
+            }
+        }
+    }
+}
+.ft_link{
+    padding: 20px 0 20px;
+    overflow: hidden;
+    .ft_help_list{
+        float: left;
+        padding-left: 15px;
+        dl{
+            float: left;
+            width: 195px;
+            dt{
+                height: 32px;
+                padding: 0 8px;
+                font-size: 14px;
+                line-height: 32px;
+                overflow: hidden;
+                font-family: "微软雅黑";
+                color: #666666;
+                font-weight: bold;
+                }
+            dd{
+                height: 24px;
+                padding: 0 8px;
+                line-height: 24px;
+                overflow: hidden;
+                white-space: normal;
+                font-size: 12px;
+            }
+            
+        }
+    }
+    .ft_ewm{
+        width: 280px;
+        overflow: hidden;
+        float: left;
+        margin-right: -50px;
+        .sjewm{
+            float: left;
+            margin-right: 50px;
+            line-height: 32px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #666;
+            img{
+                width: 90px;
+                height: 90px;
+            }
+        }
+    }
+}
+.ft_footer_link{
+    color: #666;
+    text-align: center;
+    text-indent: 0;
+    line-height: 100%;
+    margin: 15px 0;
+    font-size: 12px;
+    a{
+       margin: 0 10px;
+   }
+  
+}
+ .ft_pic_link{
+    display: block;
+    padding: 10px 0 20px;
+    text-align: center;
+    font-size: 0;
+    a{
+        display: inline-block;
+        margin:0 4px;
+    }
+}
+
+//------------------------regist----------------------
+//头部信息
+.regist_header{
+    padding:16px;
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    overflow: hidden;
+}
+.regist_wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+.regist_wrap a{
+    display: block;
+    
+}
+.logo{
+    float: left;
+
+
+}
+.regist_header_right{
+    float: right;
+    height: 18px;
+//  width: 293px;
+    line-height: 18px;
+    font-family: "simsun";
+    color: #999;
+}
+.help_wrap{
+    background: #fff;
+    
+//  position: relative;
+    z-index: 1010;
+    float: right;
+    padding: 0 6px;
+    margin-left: 25px;
+}
+.fr{
+    display: block;
+    float: left;
+}
+
+.blue_link{
+    float: left;
+    color: #06c;
+}
+//simple_footer
+
+#simple_footer{
+    width: 980px;
+    margin: 20px auto 0;
+    text-align: center;
+    a{
+        margin: 0 8px;
+        color: #333;
+    }
+    p{
+        margin-top: 10px;
+        color: #333;
+    }
+}
+.claerfix{
+    height: 30px;
+}
+.agree_word{
+    height: 35px;
+    font-size: 12px;
+    line-height: 35px;
+    color: #666666;
+    text-indent: 1em;
+    a{
+        color: #06c;
+        font-size: 12px;
+    }
+}
