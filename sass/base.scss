@@ -162,17 +162,53 @@ input,a{outline:none;}
     height: 18px;
 //  width: 293px;
     line-height: 18px;
+    font-size: 12px;
     font-family: "simsun";
     color: #999;
 }
 .help_wrap{
     background: #fff;
     
-//  position: relative;
+    position: relative;
     z-index: 1010;
     float: right;
     padding: 0 6px;
     margin-left: 25px;
+    a{
+        padding-right: 18px;
+        background: url(../img/1.png)no-repeat right -30px;
+        color: #333;
+        .help_ico{
+            width: 16px;
+            height: 18px;
+            display: inline-block;
+            margin-right: 6px;
+            background: url(../img/1.png)no-repeat -344px 0;
+            vertical-align: middle;
+        }
+    }
+    .hd_list1{
+       
+       display: none;
+        position: absolute;
+        z-index: 10000;
+        top: 0;
+        right: 0;
+        width: 98px;
+        padding-top: 21px;
+        border: 1px solid #ccc;
+         
+        a{
+        height: 24px;
+        display: block;
+        padding-left: 25px;
+        border-top: 1px dotted #e4e4e4;
+        background: #FFf;
+        line-height: 24px;
+    
+    }
+        
+    }
 }
 .fr{
     display: block;
@@ -189,6 +225,7 @@ input,a{outline:none;}
     width: 980px;
     margin: 20px auto 0;
     text-align: center;
+    font-size: 12px;
     a{
         margin: 0 8px;
         color: #333;
@@ -200,6 +237,7 @@ input,a{outline:none;}
 }
 .claerfix{
     height: 30px;
+   
 }
 .agree_word{
     height: 35px;

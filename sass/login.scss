@@ -2,7 +2,7 @@
 .login_wrap{
     padding: 26px 0 0;
     background: url(../img/regist_topshadow.png) repeat-x;
-    min-height: 600px;
+    min-height: 400px;
 }
 .wrap{
     width: 980px;
@@ -127,4 +127,127 @@
             line-height: 52px;
         }
     }
+}
+.join_wrap{
+    position: relative;
+    z-index: 10;
+    p{
+        padding: 15px 0;
+        color: #666;
+        font-size: 12px;
+    }
+    .claerfix{
+        
+        .aco_list{
+            float: left;
+            width: 230px;
+            li{
+                float: left;
+                margin: 0 20px 0 0;
+                a{
+                    display: inline-block;
+                    width: 32px;
+                    height: 35px;
+                    font-size: 32px;
+                    line-height: 35px;
+                }
+            }
+        }
+        .unfold{
+            float: left;
+            font-size: 12px;
+            display: block;
+            line-height: 34px;
+            color: #999;
+            i{
+                display: inline-block;
+                width: 20px;
+                height: 26px;
+                margin-top:4px;
+                margin-left: 5px;
+                background: url(../img/login_new.png)no-repeat -200px 3px;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+.more_load{
+    margin-top: 15px;
+    li{
+        float: left;
+        width: 82px;
+        margin: 0 0 10px 0;
+        line-height: 16px;
+        a{
+            color: #999;
+            font-size: 12px;
+            
+            i{
+                font-style: normal;
+                font-size: 16px;
+            }
+        }
+    }
+}
+//二维码登录
+.login_code{
+    display: none;
+    .lc_title{
+        color:#666;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 16px;
+        text-align: center;
+        a{
+            display: inline-block;
+            color: #ff3c3c;
+        }
+    }
+    .lc_pic{
+    position: relative;
+    text-align: center;
+    height: 180px;
+    
+    margin: 20px auto 0;
+
+   
+    .lc_list_1{
+        position: absolute;
+          left:0;
+          right: 0;
+          margin: auto;
+        border:1px solid #dedede;
+        }
+    }
+    .lc_handle{
+        padding: 20px 0 90px;
+        color: #666;
+        text-align: center;
+        a{
+            color: #333;
+            font-size: 12px;
+        }
+    }
+}
+.login_switch{
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    
+//  .toewm{
+//      background: url(../img/toewm.png)no-repeat 0 0;
+//  }
+    a{
+        display: block;
+        width: 62px;
+        height: 62px;
+        cursor: pointer;
+    }
+    .static_pc{
+        background: url(../img/toewm.png)no-repeat -88px 0;
+        
+    }
+//  .toewm{
+//       background: url(../img/toewm.png)no-repeat 0 0;
+//    }
 }
