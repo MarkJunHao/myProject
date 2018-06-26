@@ -3,6 +3,7 @@
     padding: 26px 0 0;
     background: url(../img/regist_topshadow.png) repeat-x;
     min-height: 400px;
+    overflow: hidden;
 }
 .wrap{
     width: 980px;
@@ -14,12 +15,30 @@
     width: 330px;
     padding: 45px 35px 0 35px;
     background-color: #fff;
+    .login_pc{
+        display: block
+    }
 }
 .mod_left_banner{
     margin-top: 45px;
     width: 510px;
     height: 315px;
     float: left;
+}
+.error_tips{
+    position: absolute;
+    display: none;
+    top: 9px;
+    left: 35px;
+    width: 282px;
+    height: 30px;
+    overflow: hidden;
+    padding: 0 10px 0 36px;
+    border: 1px solid #e5debc;
+    border-radius: 2px;
+    background: #fff7d1 url(../img/login_new.png)no-repeat -324px -150px;
+    line-height: 30px;
+    color: #999;
 }
 
 .claerfix{
@@ -106,7 +125,9 @@
                 }
                 .span2{
                     color: red;
-                    
+                    width: 120px;
+                    float: left;
+                    margin-left: 7px;
                 }
                 .forget_psw{
                     float: right;
@@ -176,6 +197,7 @@
     li{
         float: left;
         width: 82px;
+        display: none;
         margin: 0 0 10px 0;
         line-height: 16px;
         a{
@@ -243,11 +265,15 @@
         height: 62px;
         cursor: pointer;
     }
-    .static_pc{
+    .static_pc1{
         background: url(../img/toewm.png)no-repeat -88px 0;
-        
     }
-//  .toewm{
-//       background: url(../img/toewm.png)no-repeat 0 0;
-//    }
+    .static_pc2{
+        background: url(../img/toewm.png)no-repeat 0 0;
+    }
+
 }
+.aaaa{
+    display: block;
+}
+

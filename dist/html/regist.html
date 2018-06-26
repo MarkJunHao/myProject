@@ -11,14 +11,14 @@
 		<!--头部-->
 		<div class="regist_header">
 			<div class="regist_wrap">
-				<a href="" class="logo">
+				<a href="#" class="logo">
 					<img src="../img/loginlogo.jpg"/>
 				</a>
 				<div class="regist_header_right">
 					<span class="fr">
 						您好，欢迎光临1号店！
 					</span>
-					<a href="" class="blue_link">请登录</a>
+					<a href="login.html" class="blue_link">请登录</a>
 					<div class="help_wrap">
 						<a href="hd_menu1">
 							<s class="help_ico"></s>
@@ -26,10 +26,10 @@
 						</a>
 						<div class="hd_list1">
 							<ul>
-								<li><a href="">包裹跟踪</a></li>
-								<li><a href="">常见问题</a></li>
-								<li><a href="">在线退换货</a></li>
-								<li><a href="">在线投诉</a></li>
+								<li><a href="#">包裹跟踪</a></li>
+								<li><a href="#">常见问题</a></li>
+								<li><a href="#">在线退换货</a></li>
+								<li><a href="#">在线投诉</a></li>
 							</ul>
 						</div>
 					</div>
@@ -47,51 +47,72 @@
 							<div class="y_same_item">
 								<input type="text" class="y_s_input" id="userName"  />
 								<span class="y_s_lable">用户名</span>
-							</div>
+								<p class="r_tips ">以字母开头，包含字母、数字、"_"的组合，6-20个字符</p>
+							</div>	
 						</li>
 						<li>
 							<div class="y_same_item">
 								<input type="text" class="y_s_input" id="phoneName"  />
 								<span class="y_s_lable">手机号</span>
+								<p class="r_tips ">格式错误，请输入正确的手机号</p>
 							</div>
 						</li>
 						<li>
 							<div class="dx">
 								<input type="text" class="ysame_input" />
-								<span class="y_s_lable">短信验证码</span>
+								<span class="y_s_lable">输入验证码</span>
+								<p class=" r_tips2">验证码输入错误</p>
+								
 							</div>
-							<a class="receice_yzm" href="">获取验证码</a>
+							<a class="receice_yzm" href="#">获取验证码</a>
+							
 						</li>
 						<li>
 							<div class="y_same_item">
 								<input type="password" class="y_s_input" id="psw"  />
 								<span class="y_s_lable">设置密码</span>
+								<p class="r_tips ">密码不能为空</p>
+								<p class="r_tips ">用大、小写字母和数字组合，6-15个字符</p>
 							</div>
 						</li>
 						<li>
 							<div class="y_same_item">
 								<input type="password" class="y_s_input" id="psw1"  />
 								<span class="y_s_lable">确认密码</span>
+								<p class="r_tips r_tips1">请再次输入密码</p>
+								<p class="r_tips3">密码错误，请重新输入!</p>
+								
+								
 							</div>
 						</li>
 						<li>
 							<div class="agree_word" >
 								点击注册，表示您同意1号店  
-								<a href="">《服务协议及隐私声明》</a>
+								<a href="#">《服务协议及隐私声明》</a>
 							</div>
-							<a class="regist_btn2" href="">同意协议并注册</a>
+							<a class="regist_btn2" href="#">同意协议并注册</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 		
+		<div class="tips20">
+			<span>x</span>
+			用户名重名
+		</div>
+		<div class="tips21">
+			<span>x</span>
+			注册失败
+		</div>
 		<!--footer-->
 		<div id="simple_footer">
-			<a href="">沪ICP备16050468号</a> |
-			<a href="">沪B2-20170039</a> |
-			<a href="">营业执照</a>
+			<a href="#">沪ICP备16050468号</a> |
+			<a href="#">沪B2-20170039</a> |
+			<a href="#">营业执照</a>
 			<p>Copyright © 1号店网上超市 2007-2017，All Rights Reserved</p>
 		</div>
+		<script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/rejist.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>

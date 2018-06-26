@@ -136,6 +136,94 @@ input,a{outline:none;}
     }
 }
 
+//团购
+h5{
+    margin-bottom: 7px;
+    border-top: 1px solid #fb744b;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+    a{
+        color: #fff;
+        cursor: pointer;
+        em{
+            background: #fb6233;
+            display: inline-block;
+            position: relative;
+            top: -3px;
+            margin-top: -3px;
+            width: 140px;
+            font-size: 18px;
+            font-style: normal;
+            .left_sj{
+                position: absolute;
+                top: 0;
+                left: -4px;
+                width: 0;
+                height: 0;
+                overflow: hidden;
+                border-bottom: 4px solid #c84e4e;
+                border-left: 4px solid transparent;
+                font-size: 0;
+                line-height: 0;
+            }
+            .right_sj{
+                position: absolute;
+                top: 0;
+                right: -4px;
+                width: 0;
+                height: 0;
+                overflow: hidden;
+                border-bottom: 4px solid #c84e4e;
+                border-right: 4px solid transparent;
+                font-size: 0;
+                line-height: 0;
+            }
+            i{
+                margin-right: 8px ;
+                font-size: 20px;
+            }
+        }
+    }
+}
+.g_c_1{
+    display: block;
+    height: 165px;
+    margin: 0 18px 0 20px;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+    .g_tit{
+        height: 18px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        font-size: 18px;
+        color: #ec3639;
+        line-height: 18px;
+    }
+    .sub_tit{
+        position: relative;
+        z-index: 105;
+        width: 90px;
+        height: 40px;
+        overflow: hidden;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    img{
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        right: 18px;
+        bottom: 10px;
+        transition: all 0.6s;
+        &:hover{
+        transform: translateX(-6px);
+        }
+    }
+}
+
 //------------------------regist----------------------
 //头部信息
 .regist_header{
@@ -223,6 +311,7 @@ input,a{outline:none;}
 
 #simple_footer{
     width: 980px;
+    
     margin: 20px auto 0;
     text-align: center;
     font-size: 12px;
