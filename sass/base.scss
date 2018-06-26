@@ -21,7 +21,11 @@ input,a{outline:none;}
     margin: 0 auto;
     width: 1228px;
 }
-
+.index_ico{
+    font-size: 16px;
+    font-style: normal;
+    
+}
 
 //footer
 .ft_wrap{
@@ -222,6 +226,26 @@ h5{
         transform: translateX(-6px);
         }
     }
+}
+
+
+//进口
+.pro_tit{
+    width: 150px;
+    height: 24px;
+    overflow: hidden;
+    color: #333;
+}
+.pro_sub_tit{
+     width: 150px;
+    height: 24px;
+    overflow: hidden;
+    color: #999;
+}
+.pro_shoppe{
+    margin-right: 1px;
+    margin-top: 1px;
+    padding-bottom: 1px;
 }
 
 //------------------------regist----------------------

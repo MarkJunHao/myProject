@@ -49,7 +49,7 @@ $(function(){
 			$.ajax({
 				type:"get",
 				url:"http://datainfo.duapp.com/shopdata/userinfo.php",
-				data:{"status":"register","userID":$("#uesrName").val(),"password":$("#psw").val()},
+				data:{"status":"register","userID":$("#userName").val(),"password":$("#psw").val()},
 				async:true,
 				success:function(data){
 					console.log(data);
@@ -70,6 +70,11 @@ $(function(){
 			$(this).parent().css("display","none") 
 		})
 	
+	
+	//跳转到首页
+	$(".logo").click(function(){
+		location.href = "../index.html"
+	})
 	
 //   oBtn.onclick =function() {
 //

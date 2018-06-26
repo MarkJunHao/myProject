@@ -43,7 +43,10 @@ $(function(){
 		
 	})
 	
-	
+	//跳转到首页
+	$(".logo").click(function(){
+		location.href = "../index.html"
+	})
 	
 	
 	

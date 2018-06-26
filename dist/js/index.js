@@ -49,6 +49,15 @@ $(window).scroll(function(){
 		$(".fixed_search").slideUp(200)
 		
 	}
+	
+//左侧楼梯
+	if(num>1460){
+		$(".floor_nav").fadeIn()
+	}else{
+		$(".floor_nav").fadeOut()
+		
+	}
+	
 });
 
 //跳转登录页面
@@ -59,8 +68,10 @@ $(function(){
 		return false;
 	})
 	$(".regist").click(function(){
-		location.href="html/regist.htmll";
+		location.href="html/regist.html";
 		//console.log('aaa')
 		return false;
 	})
 })
+
+//前后轮播

@@ -35,35 +35,34 @@ $(function(){
 			}
 	})
 	
-	$(".regist_btn2").click(function(){
+	 $(".regist_btn2").click(function(){
     	//console.log($(".ysame_input").val())
     	//console.log($(".receice_yzm").text())
-		if($(".ysame_input").val().toUpperCase() == $(".receice_yzm").text()){
-			$(".r_tips2").css("display","none")
-		}else{
-			$(".r_tips2").css("display","block")
-		}
-			
-			
-		$.ajax({
-			type:"get",
-			url:"http://datainfo.duapp.com/shopdata/userinfo.php",
-			data:{"status":"register","userID":$("#uesrName").val(),"password":$("#psw").val()},
-			async:true,
-			success:function(data){
-				console.log(data);
-				if(data==0){
-					$(".tips20").css("display","block")  
-				}else if(data==2){
-					$(".tips21").css("display","block")  
-				}else{
-					location.href = "../index.html"
-				}
+			if($(".ysame_input").val().toUpperCase() == $(".receice_yzm").text()){
+				$(".r_tips2").css("display","none")
+			}else{
+				$(".r_tips2").css("display","block")
 			}
+			
+			
+			
+			$.ajax({
+				type:"get",
+				url:"http://datainfo.duapp.com/shopdata/userinfo.php",
+				data:{"status":"register","userID":$("#userName").val(),"password":$("#psw").val()},
+				async:true,
+				success:function(data){
+					console.log(data);
+					if(data==0){
+						$(".tips20").css("display","block")  
+					}else if(data==2){
+						$(".tips21").css("display","block")  
+					}else{
+						location.href = "../index.html"
+					}
+				}
+			});
 		})
-	})
-	 
-	 
 		$(".tips20 span").click(function(){
 			$(this).parent().css("display","none") 
 		})
@@ -71,6 +70,11 @@ $(function(){
 			$(this).parent().css("display","none") 
 		})
 	
+	
+	//跳转到首页
+	$(".logo").click(function(){
+		location.href = "../index.html"
+	})
 	
 //   oBtn.onclick =function() {
 //
