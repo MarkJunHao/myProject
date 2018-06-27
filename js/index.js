@@ -35,6 +35,39 @@ $(function(){
 		
 	},2000)
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 });
 
 
@@ -75,3 +108,33 @@ $(function(){
 })
 
 //前后轮播
+
+
+
+
+
+
+
+
+
+
+//猜你喜欢中的li 商品详情
+//$(function(){
+//	$(".like").mouseover(function(){
+//		$(this).css("border-color","red")
+//		//console.log(this)
+//		$(".operate_area").stop().animate({top:"230px"},300)
+//	})
+//	$(".like").mouseout(function(){
+//		$(this).css("border-color",0)
+//		//console.log(this)
+//		$(".operate_area").stop().animate({top:"266px"},300)
+//	})
+////	$(".like").mouseout(function(){
+////		$(this).css("border-color",0)
+////		//console.log(this)
+//////		$(".up").
+////		$(".up").stop().animate({top:"350px"},500)
+////		
+////	})
+//})

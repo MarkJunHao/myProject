@@ -227,7 +227,46 @@ h5{
         }
     }
 }
-
+//团购
+.group_buy{
+        width: 484px;
+        float: left;
+        height: 400px;
+        background: #fff url(../img/group_bg.png)no-repeat center top;
+        .claerfix{
+            .group_today{
+                position: relative;
+                float: left;
+                overflow: hidden;
+                border-right: 1px solid #f0f0f0;
+                a{
+                    display: block;
+                    width: 250px;
+                    padding-left: 0;
+                    height: 360px;
+                    img{
+                        width: 250px;
+                        height: 360px;
+                    }
+                }
+            }
+            .fr2{
+                float: right;
+                    width: 232px;
+                .g_varitety{
+                    width: 232px;
+                    position: relative;
+                    margin-top: 18px;
+                }
+                .g_brand{
+                    margin-top: 18px;
+                    .g_c_1{
+                        border-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
 
 //进口
 .pro_tit{
@@ -247,6 +286,207 @@ h5{
     margin-top: 1px;
     padding-bottom: 1px;
 }
+
+
+//侧边栏固定
+.p_ico_tab{
+    position: relative;
+    z-index: 10;
+    display: block;
+    height: 32px;
+    background-color: #303030;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.p_ico{
+    font-size: 20px;
+    font-style: normal;
+    color: #fff;
+}
+.p_ico_text{
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    right: -60px;
+    height: 32px;
+    padding: 0 6px;
+    background-color: #3f3c3c;
+    line-height: 32px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+//.keywords{
+//         height: 40px;
+//         font-size: 12px;
+//         overflow: hidden;
+//         border-right: 1px solid #f5f5f5;
+//         margin-left: 4px;
+////         color: #aaa; 
+//         ul{
+//             margin-left: -3px;
+//             li{
+//                 float: left;
+//                 a{
+//                     display: inline-block;
+//                     margin: 0 15px;
+//                     line-height: 40px;
+////                     color: #aaa;
+//                     &:hover{
+//                         font-weight: bold;
+//                         color: #F78A4B;
+//                     }
+//                 }
+//             }
+//         }
+//     } 
+
+//.pro_wrap{
+//     float: left;
+//     position: relative;
+//     width: 247px;
+//     height: 194px;
+//     overflow: hidden;
+//     border-top: 1px solid #f5f5f5;
+//     border-right: 1px solid #f5f5f5;
+//     a{
+//         display: block;
+//         width: 247px;
+//         height: 174px;
+//         padding-top: 20px;
+//         color: #333;
+//         p{
+//             position: relative;
+//             z-index: 105;
+//             margin-left: 20px;
+//         }
+//         .pro_sub_tit{
+//             color: #F76969;
+//         }
+//         img{
+//             position: absolute;
+//             right: 10px;
+//             bottom: 10px;
+//             z-index: 101;
+//             width: 130px;
+//             height: 130px;
+//            transition: all 0.5s;
+//            &:hover{
+//                transform:translate(-6px);
+//            }
+//         }
+//     }
+// }
+
+
+.floor_tit{
+    background: #0bcd96;
+    height: 25px;
+    padding: 12px 10px 12px 18px;
+    color: #FFF;
+    line-height: 25px;
+    h4{
+        float: left;
+        font-size: 20px;
+        font-weight: normal;
+        a{
+            color: #fff;
+            em{
+                margin-left: 10px;
+                font-weight: bold;
+                font-style: normal;
+            }
+        }
+        
+    }
+    .keywords{
+        overflow: hidden;
+        text-align: right;
+        max-width: 430px;
+        height: 24px;
+        line-height: 24px;
+        
+        float: right;
+        ul{
+            margin-right: -5px;
+            li{
+                float: right;
+                
+                a{
+                    display: block;
+                    margin: 0 8px;
+                    color: #fff;
+                    &:hover{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+.claerfix{
+    
+    .left_slider{
+        position: relative;
+        float: left;
+        width: 236px;
+        height: 381px;
+        overflow: hidden;
+        background: darkcyan;
+    }
+    .pro_con{
+        font-size: 12px;
+        float: left;
+        width: 186px;
+        height: 381px;
+        .pro_wrap{
+            width: 185px;
+            height: 190px;
+            position: relative;
+            border-top: 1px solid #f5f5f5;
+             border-right: 1px solid #f5f5f5;
+            a{
+                display: block;
+                height: 172px;
+                padding-top: 20px;
+                
+                .pro_tit{
+                    height: 24px;
+                    margin-left: 20px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    overflow: hidden;
+                    color: #333;
+                }
+                .pro_sub_tit{
+                    color: #0BCD96;
+                    height: 24px;
+                    position: relative;
+                    z-index: 105;
+                    max-width: 100px;
+                    font-size: 14px;
+                    margin-left: 20px;
+                    line-height: 24px;
+                    overflow: hidden;
+                }
+                img{
+                       position: absolute;
+                       right: 10px;
+                       bottom: 10px;
+                       z-index: 101;
+                       width: 105px;
+                       height: 105px;
+                      transition: all 0.5s;
+                      &:hover{
+                          transform:translate(-6px);
+                      }
+                }
+            }
+        }
+    }
+}
+    
 
 //------------------------regist----------------------
 //头部信息
