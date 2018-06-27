@@ -37,13 +37,24 @@ $(function(){
 	
 	
 	
+	//回到顶部
+$(".hddb").click(function(){
+	$("html,body").stop().animate({"scrollTop":0},2000)
+	console.log($(window).scrollTop(0))
+	return false;
+})
 	
 	
-	
-	
-	
-	
-	
+
+	$.get("http://datainfo.duapp.com/shopdata/getclass.php",function(data){
+		data = JSON.parse(data);
+		console.log(data);
+		var str = "";
+		$.each(data,function(index,item){
+			str += `<a href="html/list.html?classID=${item.classID}">${item.className}</a>`;
+		})
+		$(".product_class").html(str);
+	})
 	
 	
 	
@@ -73,7 +84,9 @@ $(function(){
 
 //顶部悬浮
 //var fixed = document.getElementsByClassName('fixed_search')[0];
+
 $(window).scroll(function(){
+	
 	var num = document.documentElement.scrollTop;
 	//console.log(num)
 	if(num>590){
@@ -84,13 +97,27 @@ $(window).scroll(function(){
 	}
 	
 //左侧楼梯
-	if(num>1460){
-		$(".floor_nav").fadeIn()
-	}else{
-		$(".floor_nav").fadeOut()
+
+		if(num>1460){
+			$(".floor_nav").fadeIn()
+		}else{
+			$(".floor_nav").fadeOut()
+			
+		}
 		
-	}
+		
+		
+			
+		
+		$(".lt1").each(function(){
+			var index = $(this).index()+2;
+			if(num>$(this).offset().top - $(this).outerHeight()/2){
+				$(".floor_nav li").eq(index-2).css("background","red")
+			}
+		})
 	
+
+
 });
 
 //跳转登录页面

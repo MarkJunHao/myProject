@@ -1,0 +1,112 @@
+.hd_logo{
+    a{
+        width: 205px;
+        height: 110px;
+    }
+}
+.list4{
+    height: 400px;
+}
+
+#product_list{
+    min-height: 600px;
+//  background: coral;
+    box-sizing: border-box;
+    padding: 30px 30px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    a{
+        float: left;
+        display: inline-block;
+        width: 230px;
+        height: 350px;
+        margin:10px 10px;
+      border: 1px solid #fff;
+        
+        padding: 10px 15px 10px;
+        &:hover{
+            border: 1px solid red;
+        }
+        .list_pic{
+//         display: block;
+           width: 200px;
+           height: 250px; 
+           margin: 0 auto;
+        }
+        .list_name{
+            font-size: 16px;
+            line-height: 24px;
+            height: 48px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        .list_price{
+            font-size: 20px;
+            width: 100px;
+            float: left;
+            font-weight: bold;
+            color: orangered;
+        }
+        span{
+            display: block;
+            height: 36px;
+            width: 100px;
+            float: right;
+            line-height: 36px;
+            margin-right: 10px;
+            cursor: pointer;
+            background: red;
+            color: #fff;
+        }
+    }
+}
+//面包屑导航
+.mb_tit{
+    position: relative;
+    z-index: 41px;
+    height: 37px;
+    line-height: 37px;
+    font-size: 12px;
+    border-top: 1px solid #fff;
+    ul{
+       height: 37px;
+       margin: 0 220px 0 5px;
+       position: relative; 
+       li{
+           float: left;
+           a{
+               &:hover{
+                   color: red;
+               }
+           }
+           
+       }
+    }
+}
+.mb_search{
+    position: relative;
+    border: 2px solid #e5e5e5;
+    font-size: 12px;
+    margin-bottom: 20px;
+    .mb_search1{
+        height:38px ;
+        border-bottom: 1px solid #e5e5e5;
+        .g_title{
+            width: 129px;
+            height: 39px;
+            float: left;
+            border-right: 1px dotted #e5e5e5;
+            background: #e5e5e5;
+            span{
+                line-height: 39px;
+                display: block;
+                text-align: center;
+                margin: auto;
+            }
+        }
+        .g_pic{
+            padding: 5px 0;
+        }
+    }
+}

@@ -2,25 +2,39 @@ $(function(){
 	
 	
 	$("#login_button").click(function(){
-		$.ajax({
-			type:"get",
-			url:"http://datainfo.duapp.com/shopdata/userinfo.php",
-			data:{"status":"login","userID":$(".ipt_uesrname").val(),"password":$(".ipt_password").val()},
-			async:true,
-			success:function(data){
-				console.log(data);
+//		console.log($(".ipt_username").val())
+		$.get("http://datainfo.duapp.com/shopdata/userinfo.php",{"status":"login","userID":$(".ipt_username").val(),"password":$(".ipt_password").val()},function(data){
+				data = JSON.parse(data);
+				console.log(data)
 				if(data==0){
-					$(".error_tips").css("display","block").text("用户名不存在")  
+					$(".tips20").css("display","block")  
 				}else if(data==2){
-					$(".error_tips").css("display","block").text("用户名和密码不符")  
+					$(".tips21").css("display","block")  
 				}else{
+					$.cookie("username",data.userID,{expires:7,path:"/"});
 					location.href = "../index.html"
 				}
-				
-			}
-			
-	
-		});
+			})
+//		$.ajax({
+//			type:"get",
+//			url:"http://datainfo.duapp.com/shopdata/userinfo.php",
+//			data:{"status":"login","userID":$(".ipt_uesrname").val(),"password":$(".ipt_password").val()},
+//			async:true,
+//			success:function(data){
+//				console.log(data);
+//				if(data==0){
+//					$(".error_tips").css("display","block").text("用户名不存在")  
+//				}else if(data==2){
+//					$(".error_tips").css("display","block").text("用户名和密码不符")  
+//				}else{
+//					$.cookie("uesrname",data.userID,{expires:7,path:"/"});
+////					location.href = "../index.html"
+//				}
+//				
+//			}
+//			
+//	
+//		});
 	})
 	
 	$(".checkbox").click(function(){

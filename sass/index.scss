@@ -19,166 +19,7 @@ body{
      background: #f5f5f5;
 }
 
-//头部信息
-.hd_top_bar{
-    height: 30px;
-    line-height: 30px;
-    border-bottom: 1px solid #e5e5e5;
-    background-color: #f4f4f4;
-    color: #333;
-    font-size: 12px;
-}
 
-.claerfix{
-    display: block;
-}
-.hd_indxProvce{
-    position: relative;
-    z-index: 605;
-    float: left;
-    width: 123.75px;
-    height: 30px;
-}
-
-.hd_topbar_right{
-    float: right;
-    color: #666;
-}
-.hd_icontfont{
-    color: red;
-    font-style: normal;
-    font-weight: 900;
-}
-.hd_topbar_right{
-    float: right;
-    color: #666;
-    ul{
-        float: left;
-        width: 375px;
-        .li1{
-            float: left;
-            width:39px;
-            color: red;
-          text-indent:10px;
-        }
-        .li2{
-            float: left;
-            width:28px ;
-            a{
-                display: block;
-                margin: 0 2px;
-                color: red;
-            }
-        }
-        .li3{
-            float: left;
-            width: 44px;
-            a{
-                display: block;
-                margin: 0 10px;
-            }
-        }
-        .li4{
-            float: left;
-//          width: 85px;
-            a{
-                display: block;
-                margin: 0 12px;
-            }
-        }
-        .li5{
-            float: left;
-            .hd_menu{
-                 a{
-                     display: block;
-                    margin: 0 10px;
-                    span{
-                        transform-origin: 50% 50%;
-                        transition: all .4s
-                    }
-                }
-            }
-            
-            .hd_menu_list{
-                position: absolute;
-                top: 29px;
-                display: none;
-                width: 68px;
-                padding: 5px 5px 5px 10px;
-                border: 1px solid #dbdbdb;
-                border-top: 0 none;
-                background-color: #fff;
-                a{
-                    display: block;
-                    width: 100%;
-                }
-            }
-           
-        }
-        .li6{
-            float: left;
-            a{
-                display: block;
-                margin-left: 16px;
-                span{
-                    font-weight: 900;
-                }
-            }
-            .hd_ewm{
-                position: absolute;
-                top: 30px;
-                display: none;
-                padding: 15px 9px 9px;
-                border: 1px solid #e5e5e5;
-                background-color: #fff;
-                .sanjiao{
-                    width: 0;
-                    height: 0;
-                    border-top: 0px;
-                    border-left: 7px solid transparent;
-                    border-right: 7px solid transparent;
-                    border-bottom: 7px solid #E5E5E5;
-                    position: absolute;
-                    top: -7px;
-                    left: 46px;
-                }
-                p{
-                    text-align: center;
-                    line-height: 12px;
-                    margin-bottom: 7px;
-                }
-                a{
-                    display: block;
-                    margin: 0;
-                }
-            }
-        }
-    }
-    ul li:hover a{
-        color: red;
-    }
-    ul li:nth-of-type(5):hover{
-        background: #fff;
-        border-left: 1px solid #dbdbdb;
-        border-right: 1px solid #dbdbdb;
-       
-    }
-    ul li:nth-of-type(5):hover .hd_menu_list{
-        display: block;
-        
-    }
-    ul li:nth-of-type(5):hover .hd_menu_list a{
-        color: #000;
-    }
-    
-    ul li:nth-of-type(5) .hd_menu_list a:hover{
-        color: red;
-    }
-    
-    ul li:nth-of-type(6):hover .hd_ewm {
-        display: block;
-    }
-}
 
 
 
@@ -278,61 +119,15 @@ body{
     }
     
 }   
-    
 
 
-.shop{
-    float: right;
-     width: 130px;
-     height: 39px;
-     border: 1px solid #d7d7d7;
-     a{
-        display: block;
-        height: 20px;
-        padding: 9px 0 9px;
-        background: #FFF;
-        border: 0;
-        text-align: center;
-        line-height: 20px;
-        color: #666666;
-        font-size: 16px;  
-        span{
-           margin-right: 20px; 
-        }  
-    }
-}
-.hd_list{
-    width: 754px;
-    height: 36px;
-    a{
-        display: block;
-        float: left;
-        margin-right: 15px;
-        line-height: 36px;
-        color: #aaa;
-        font-size: 14px;
-    }
-}
-.hd_nav{
-   float: left;
-    height: 40px;
-    li{
-        float: left;
-            margin-right: 30px;
-        
-        a{
-            display: block;
-            color: #333;
-            font-size: 16px;
 
-        }
-    }
-}
+
 
 //banner   商品详情
 #banner{
     height: 400px;
-    background: coral;
+//  background: coral;
     
 }
 .wrap{
@@ -377,13 +172,41 @@ body{
                     font-family: "微软雅黑";
                 }
             }
+            .product_class{
+              display: none;
+                width: 1023px;
+                height: 400px;
+                background: #fff;
+                position: absolute;
+                left: 205px;
+                top: 0;
+                z-index: 200px;
+                box-sizing: border-box;
+                padding: 50px 30px;
+                a{
+                  display: inline-block;
+                    width: 50px;
+                    height: 30px;
+                    color: #CECECE;
+                    margin: 10px;
+                    &:hover{
+                        color: red;
+                    }
+                }
+                
+            }
+                
             &:hover{
                 background: #fff;
                 a{
                     color: #000;
+                    
                 }
                 i{
                     color: red;
+                }
+                .product_class{
+                    display: block;
                 }
             }
         }
@@ -850,10 +673,55 @@ a.next2{
            background-color: #fff;
            color: #666;
            line-height: 18px;
-           &:hover{
-               background: red;
+//         &:hover{
+//             background: red;
+//         }
+           &:nth-of-type(1):hover{
+               background: #645144;
+               color: #fff;
            }
-          }
+           &:nth-of-type(2):hover{
+               background: #f78b4b;
+               color: #fff;
+               
+           }
+            &:nth-of-type(3):hover{
+               background: #0bcd96;
+               color: #fff;
+               
+           }
+            &:nth-of-type(4):hover{
+               background: #ff87d0;
+               color: #fff;
+               
+           }
+            &:nth-of-type(5):hover{
+               background: #fe8282;
+               color: #fff;
+               
+           }
+            &:nth-of-type(6):hover{
+               background: #925740;
+               color: #fff;
+               
+           }
+            &:nth-of-type(7):hover{
+               background: #5c9bf1;
+               color: #fff;
+               
+           }
+            &:nth-of-type(8):hover{
+               background: #6d62da;
+               color: #fff;
+               
+           }
+            
+            &:nth-of-type(9):hover{
+               background: red;
+               color: #fff;
+               
+           }
+        }
       }
     }
 }
@@ -1611,16 +1479,23 @@ a.next2{
             display: block;
             position: relative;
             margin-top: 5px;
+            
         }
         .gwc{
             position: relative;
             margin-top: 5px;
             display: block;
+            background: rrgba(255,255,255,0.8)
+            &:hover{
+                background: #ff5c4d;
+            }
             a{
+                display: block;
+                padding: 5px 0;
                 em{
                     font-size: 20px;
-    font-style: normal;
-    color: #fff;
+                    font-style: normal;
+                    color: #fff;
                 }
                 .p_cart_text{
                     padding: 8px 8px 0;
