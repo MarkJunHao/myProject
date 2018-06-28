@@ -18,21 +18,45 @@
             width: 350px;
             height: 350px;
             position: relative;
-                border: 1px solid blue; 
+            border: 1px solid red; 
             
             .yuantu{
 //              display: block;
+              position: relative;
                 width: 350px;
                 height: 350px;
-                border: 1px solid blue;
+//              border: 1px solid blue;
                 img{
                      width: 350px;
                     height: 350px;
                 } 
-            }
-            .fadajing{
-                position: absolute;
+                .fdq{
+                    display: none;
+                    position: absolute;
+                    width: 175px;
+                    height: 175px;
+                    background: yellow;
+                    opacity: .4;
+                }
                 
+            }
+            
+            .fangdajing{
+                display: none;
+                position: absolute;
+                z-index: 200;
+                left: 385px;
+                width: 350px;
+                height: 350px;
+                border: #cecece;
+                top: 0;
+                    overflow: hidden;
+                
+                img{
+                    width: 700px;
+                    height: 700px;
+                    position: absolute;
+                }
             }
         }
         .p_bottom{
@@ -40,6 +64,7 @@
             margin-top: 20px;
             text-align: center;
             width: 350px;
+            height: 120px;
             border: 1px solid red;
             img{
                 float: left;
@@ -50,58 +75,66 @@
         }
     } 
 }             
-//  .detail_img{
-//      display: block;
-////      position: absolute;
-////      left: 0;
-////      top: 0;
-//      width: 350px;
-//      height: 350px;
-//      border: 1px solid #000;
-//      text-align: center;
-//  }
-//  .detail_name{
-//      position: absolute;
-//      width: 500px;
-//      font-size: 25px;
-//      height: 40px;
-//      line-height: 40px;
+
+.right1{
+    width: 600px;
+    position: relative;
+    min-height: 600px;
+    overflow: hidden;
+    float: left;
+    margin-left: 40px;
+    .detail_name{
+        position: absolute;
+        width: 550px;
+        font-size: 20px;
+        line-height: 40px;
 //      left: 400px;
 //      top: 50px;
-//      font-weight: bold;
-////      color: red;
-//  }
-//  .detail_price{
-//      position: absolute;
-//       width: 200px;
-//      font-size: 28px;
-//      height: 40px;
-//      line-height: 40px;
-//      left: 500px;
-//      top: 190px;
-//      font-weight: bold;
-//      color: red;
-//  }
-//  .detail_btn{
-//      position: absolute;
-//      left: 600px;
-//  }
-//};
-//.detail_price1{
-//  display: block;
-//  position: absolute;
-//  left: 420px;
-//  top: 200px;
-//}
-
-
-//.xiaotu{
-////  position: absolute;
-////  top: 500px;
-//  display: block;
-//  width: 100px;
-//  margin: 10px;
-// 
-//  height: 100px;
-////  float: left;
-//}
+        top: 50px;
+        left: 0;
+//      margin-top: 50px;
+        font-weight: 500;
+    }
+    .detail1{
+        position: absolute;
+       top: 170px;
+       left: 0;
+        width: 600px;
+        height: 50px;
+        background: #ffcbc4;
+        
+        padding: 30px;
+        .detail_price1{
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            float: left;
+            width: 150px;
+            text-align: center;
+            color: red;
+        }
+        .detail_price{
+            height: 40px;
+            line-height: 40px;
+            float: left;
+            font-size: 30px;
+            text-align: center;
+            color: red;
+            font-weight: bold;
+        }
+        
+    }
+    .detail_buy{
+        position: absolute;
+       top: 350px;
+       left: 0;
+        width: 600px;
+        height: 140px;
+        input{
+            width: 150px;
+            height: 40px;
+            margin:0 25px;
+            font-size: 18px;
+        }
+    }
+}

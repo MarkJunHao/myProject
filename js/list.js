@@ -15,5 +15,14 @@ $(function(){
 			})
 			$("#product_list").html(str);
 		});
-		
+	
+	//点击跳转
+//	$(".hd_topbar_home span").click(function(){
+//		location.href = "../index.html"
+//	})
+//	$(".hd_topbar_home span").click(function(){
+//		location.href = "../index.html"
+//	})
+	
+	
 })

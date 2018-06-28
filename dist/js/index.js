@@ -39,7 +39,8 @@ $(function(){
 	
 	//回到顶部
 $(".hddb").click(function(){
-	$("html,body").stop().animate({"scrollTop":0},2000)
+	
+	$("html,body").stop().animate({"scrollTop":0},1000)
 	console.log($(window).scrollTop(0))
 	return false;
 })
@@ -57,25 +58,20 @@ $(".hddb").click(function(){
 	})
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+//购物车跳转
+$(".gwc").click(function(){
+	location.href = "html/cart.html"
+})
+$(".shop").click(function(){
+	location.href = "html/cart.html"
+})	
+
+
+//$(".slider_nav em").on("mouseover",function(){
+//	$(this).css("background","#0bcd96").siblings().css("background","#ccc")
+//	
+//	
+//})
 	
 	
 	
@@ -110,9 +106,9 @@ $(window).scroll(function(){
 			
 		
 		$(".lt1").each(function(){
-			var index = $(this).index()+2;
+			var index = $(this).index();
 			if(num>$(this).offset().top - $(this).outerHeight()/2){
-				$(".floor_nav li").eq(index-2).css("background","red")
+				$(".floor_nav li").eq(index).css("background","red").siblings($(".floor_nav li")).css("background","")
 			}
 		})
 	
@@ -133,6 +129,7 @@ $(function(){
 		return false;
 	})
 })
+
 
 //前后轮播
 

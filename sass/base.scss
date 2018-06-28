@@ -712,6 +712,70 @@ h5{
         height: 381px;
         overflow: hidden;
         background: darkcyan;
+        ul{
+            li{
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 101;
+                a{
+                    display: block;
+                    width: 236px;
+                    height: 356px;
+                    padding-top: 25px;
+                    .captain{
+                        position: relative;
+                        z-index: 105;
+                        margin-left: 18px;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #0bcd96;
+                    }
+                    .sub_tit{
+                         position: relative;
+                        z-index: 105;
+                        margin-left: 18px;
+                        font-size: 14px;
+                        line-height: 30px;
+                    }
+                    img{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 102;
+                        width: 246px;
+                        height: 381px;
+                    }
+                }
+            }
+        }
+        .slider_nav{
+            position: absolute;
+            left: 18px;
+            top: 87px;
+            z-index: 105;
+            a{
+                float: left;
+                width: 22px;
+                height: 4px;
+                overflow: hidden;
+                padding: 13px 0;
+                margin-right: 5px;
+                em{
+                    display: block;
+                    height: 4px;
+                    overflow: hidden;
+                    background: #ccc;
+                    font-size: 0;
+                    line-height: 0;
+                    &:hover{
+                        background:#0bcd96 ;
+                    }
+//                  #0bcd96
+
+                }
+            }
+        }
     }
     .pro_con{
         font-size: 12px;
